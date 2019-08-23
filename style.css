@@ -19,6 +19,37 @@ html {
   color: #d8c99b;
 }
 
+.container {
+  display: flex;
+  background: #d8c99b;
+  justify-content: flex-start;
+}
+
+.homebox {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardimg {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.poster {
+  margin: 10px;
+  width: 90px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardimg :hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+/*.container {
+  padding: 2px 16px;
+}*/
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -42,9 +73,3 @@ html {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.container {
-  display: flex;
-  background: #d8c99b;
-  color: black;
-}
