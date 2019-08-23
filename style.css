@@ -10,3 +10,9 @@ html {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.container {
+  display: flex;
+  background: #d8c99b;
+  color: black;
+}
