@@ -6,6 +6,9 @@ $dark: #273e47;
 
 $font: Helvetica, Arial, sans-serif;
 
+/* h1 {
+  @extend %h1-styling
+ } */
 %h1-styling {
   font-size: 1, 5em;
   color: $light;
