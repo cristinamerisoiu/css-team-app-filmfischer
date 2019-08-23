@@ -1,3 +1,13 @@
+/* h1 {
+  @extend %h1-styling
+ } */
+h1 {
+  font-size: 1, 5em;
+  color: #d8c99b;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -7,6 +17,28 @@
 html {
   font-size: 16px;
   color: #d8c99b;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.cards h3 {
+  font-style: italic;
+}
+
+.card {
+  display: grid;
+  padding: 4px;
+  background: #273e47;
+  grid-template-rows: max-content 200px 1fr;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
