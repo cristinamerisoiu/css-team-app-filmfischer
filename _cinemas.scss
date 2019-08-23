@@ -3,8 +3,9 @@ h1 {
   text-align: center;
 }
 .cinemabody {
+}
+.cinemawhole {
   background-color: $dark;
-  overflow: scroll;
 }
 .cinemazip {
   color: $light;
@@ -31,9 +32,9 @@ h1 {
   height: 120px;
   width: 390px;
 }
-.cinemamain {
+/*.cinemamain {
   width: 100%;
-}
+}*/
 .cinemasection {
   display: flex;
   flex-direction: row;

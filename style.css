@@ -54,9 +54,8 @@ h1 {
   text-align: center;
 }
 
-.cinemabody {
+.cinemawhole {
   background-color: #273e47;
-  overflow: scroll;
 }
 
 .cinemazip {
@@ -87,10 +86,9 @@ h1 {
   width: 390px;
 }
 
-.cinemamain {
+/*.cinemamain {
   width: 100%;
-}
-
+}*/
 .cinemasection {
   display: flex;
   flex-direction: row;
