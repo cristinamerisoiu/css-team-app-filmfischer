@@ -31,8 +31,10 @@ html {
 
 .card {
   display: grid;
-  padding: 4px;
+  padding: 10px;
   background: #273e47;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   grid-template-rows: max-content 200px 1fr;
 }
 .card img {
