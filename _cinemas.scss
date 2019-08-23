@@ -2,28 +2,63 @@ h1 {
   @extend %h1-styling;
   text-align: center;
 }
+.cinemabody {
+  background-color: $dark;
+  overflow: scroll;
+}
 .cinemazip {
-  align-content: center;
+  color: $light;
+  margin: 15px;
+  margin-left: 120px;
+  width: 137px;
+  border: 3px solid $light;
+  text-align: center;
+}
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 387px;
+  margin: 15px;
+  padding: 15px;
+  padding-left: 20px;
+  background-color: $red;
+  border: 3px solid $light;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 120px;
+  width: 390px;
 }
 .cinemamain {
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  width: 100% vw;
+  width: 100%;
 }
 .cinemasection {
   display: flex;
-  border: 1px solid $light;
-  margin: 5px;
+  flex-direction: row;
+  border: 3px solid $light;
+  margin: 15px;
   font-family: $font;
+  background-color: $red;
+  width: 387px;
+}
+h4 {
+  color: $mustard;
+  margin: 5px;
+}
+h5 {
+  margin: 3px;
 }
 .cinemaimg {
-  max-width: 20px;
+  width: 90px;
   margin: 10px;
-  object-fit: contain;
 }
 .cinemainfo {
-  flex-grow: 1;
-  padding: 3;
-  color: $red;
+  color: $light;
+}
+.cinemaicons {
+  i {
+    margin: 7px;
+  }
 }

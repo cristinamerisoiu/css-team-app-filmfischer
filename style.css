@@ -23,34 +23,73 @@ h1 {
   text-align: center;
 }
 
+.cinemabody {
+  background-color: #273e47;
+  overflow: scroll;
+}
+
 .cinemazip {
-  align-content: center;
+  color: #d8c99b;
+  margin: 15px;
+  margin-left: 120px;
+  width: 137px;
+  border: 3px solid #d8c99b;
+  text-align: center;
+}
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 387px;
+  margin: 15px;
+  padding: 15px;
+  padding-left: 20px;
+  background-color: #a4243b;
+  border: 3px solid #d8c99b;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 120px;
+  width: 390px;
 }
 
 .cinemamain {
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  width: 100% vw;
+  width: 100%;
 }
 
 .cinemasection {
   display: flex;
-  border: 1px solid #d8c99b;
-  margin: 5px;
+  flex-direction: row;
+  border: 3px solid #d8c99b;
+  margin: 15px;
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #a4243b;
+  width: 387px;
+}
+
+h4 {
+  color: #d8973c;
+  margin: 5px;
+}
+
+h5 {
+  margin: 3px;
 }
 
 .cinemaimg {
-  max-width: 20px;
+  width: 90px;
   margin: 10px;
-  object-fit: contain;
 }
 
 .cinemainfo {
-  flex-grow: 1;
-  padding: 3;
-  color: #a4243b;
+  color: #d8c99b;
+}
+
+.cinemaicons i {
+  margin: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
