@@ -1,0 +1,29 @@
+h1 {
+  @extend %h1-styling;
+  text-align: center;
+}
+.cinemazip {
+  align-content: center;
+}
+.cinemamain {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100% vw;
+}
+.cinemasection {
+  display: flex;
+  border: 1px solid $light;
+  margin: 5px;
+  font-family: $font;
+}
+.cinemaimg {
+  max-width: 20px;
+  margin: 10px;
+  object-fit: contain;
+}
+.cinemainfo {
+  flex-grow: 1;
+  padding: 3;
+  color: $red;
+}
