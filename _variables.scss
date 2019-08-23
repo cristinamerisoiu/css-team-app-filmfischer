@@ -1,0 +1,25 @@
+$red: #a4243b;
+$light: #d8c99b;
+$mustard: #d8973c;
+$brown: #bd632f;
+$dark: #273e47;
+
+$font: Helvetica, Arial, sans-serif;
+
+%h1-styling {
+  font-size: 1, 5em;
+  color: $light;
+  font-weight: bold;
+  font-family: $font;
+}
+
+%header-style {
+  height: 60px;
+  background-color: $mustard;
+  color: $light;
+}
+%nav-style {
+  height: 60px;
+  background-color: $red;
+  color: $light;
+}
