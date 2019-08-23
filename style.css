@@ -1,6 +1,7 @@
 /* h1 {
   @extend %h1-styling
  } */
+<<<<<<< HEAD
 h1 {
   font-size: 1, 5em;
   color: #d8c99b;
@@ -8,6 +9,8 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+=======
+>>>>>>> master
 *,
 *::before,
 *::after {
@@ -19,6 +22,7 @@ html {
   color: #d8c99b;
 }
 
+<<<<<<< HEAD
 .container {
   display: flex;
   background: #d8c99b;
@@ -70,6 +74,85 @@ html {
   object-fit: cover;
   width: 100%;
   height: 100%;
+=======
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  background: #d8973c;
+}
+footer > a {
+  color: #273e47;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 0.5px #273e47 solid;
+}
+footer > a:hover {
+  background: #bd632f;
+}
+
+.outset {
+  border-style: outset;
+}
+
+.bodybackground {
+  background-color: #273e47;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 8px;
+  width: 45%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardcontainer {
+  padding: 2px 16px;
+  background-color: #a4243b;
+}
+
+.cardfront {
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.programflex {
+  display: flex;
+  overflow: auto;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexitemimg {
+  width: 100%;
+  flex-wrap: wrap;
+>>>>>>> master
 }
 
 /*# sourceMappingURL=style.css.map */
