@@ -52,6 +52,11 @@ footer > a:hover {
 
 h1 {
   text-align: center;
+  text-shadow: 3px 5px 5px #251a1a;
+}
+
+.cinemabody {
+  overflow: auto;
 }
 
 .cinemawhole {
@@ -65,25 +70,29 @@ h1 {
   width: 137px;
   border: 3px solid #d8c99b;
   text-align: center;
+  box-shadow: 3px 5px 5px #251a1a;
 }
 
 .mapouter {
   position: relative;
-  text-align: center;
-  height: 150px;
-  width: 387px;
+  text-align: left;
+  height: 250px;
+  width: 87vw;
+  max-width: 768px;
   margin: 15px;
+  margin-left: 20px;
   padding: 15px;
-  padding-left: 20px;
   background-color: #a4243b;
   border: 3px solid #d8c99b;
+  box-shadow: 3px 5px 5px #251a1a;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 120px;
-  width: 390px;
+  height: 220px;
+  width: 87vw;
+  margin-left: 10px;
 }
 
 /*.cinemamain {
@@ -93,10 +102,13 @@ h1 {
   display: flex;
   flex-direction: row;
   border: 3px solid #d8c99b;
+  box-shadow: 3px 5px 5px #251a1a;
   margin: 15px;
+  margin-left: 20px;
   font-family: Helvetica, Arial, sans-serif;
   background-color: #a4243b;
-  width: 387px;
+  width: 87vw;
+  max-width: 768px;
 }
 
 h4 {
@@ -115,6 +127,7 @@ h5 {
 
 .cinemainfo {
   color: #d8c99b;
+  text-align: left;
 }
 
 .cinemaicons i {
