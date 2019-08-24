@@ -1,15 +1,13 @@
-.container {
-  display: flex;
-  background: #d8c99b;
-  justify-content: flex-start;
+.logo {
+  align-items: flex-start;
 }
-.homebox {
+/*.homebox {
   display: flex;
   flex-wrap: wrap;
 }
 .cardimg {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 .poster {
@@ -17,6 +15,49 @@
   width: 100px;
 }
 /* On mouse-over, add a deeper shadow */
-.cardimg :hover {
+/*.cardimg :hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
 }
