@@ -1,5 +1,8 @@
 .test {
   display: none;
+  position: absolute;
+  left: 70px;
+  top: 80px;
 }
 
 .bodybackground {
@@ -16,10 +19,12 @@
   width: 45%;
 
   &:hover {
-    opacity: 0.3;
-
     .test {
-      display: block;
+      display: inline;
+    }
+
+    img {
+      opacity: 0.3;
     }
   }
 }
@@ -29,13 +34,8 @@
   background-color: $red;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
 .programflex {
   display: flex;
-  overflow: auto;
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
