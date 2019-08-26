@@ -9,6 +9,29 @@ html {
   color: $light;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  border: $dark solid 1px;
+  align-items: center;
+  padding: 4px;
+}
+.filmfischer {
+  background-color: $mustard;
+  color: $dark;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+  .headerimg {
+    margin-left: 10px;
+  }
+
+  p {
+    padding: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px $light;
+    transition: 0.3s;
+  }
+}
 body {
   display: grid;
   grid-template-rows: 50px 1fr 50px;
