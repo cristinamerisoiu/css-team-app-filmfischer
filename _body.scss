@@ -8,6 +8,25 @@ html {
   font-size: 16px;
   color: $light;
 }
+header {
+  display: flex;
+  justify-content: center;
+  border: $dark solid 1px;
+  align-items: center;
+  padding: 4px;
+  background-color: $mustard;
+  color: $dark;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 2px 2px $light;
+  transition: 0.3s;
+}
+.headerimg {
+  margin-left: 10px;
+}
 
 body {
   display: grid;
@@ -31,6 +50,7 @@ footer {
     justify-content: center;
     text-decoration: none;
     border: 0.5px $dark solid;
+    text-shadow: 2px 2px $light;
 
     &:hover {
       background: $brown;
