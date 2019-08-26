@@ -2,6 +2,11 @@ h1 {
   @extend %h1-styling;
 }
 
+.mainBackground {
+  overflow: scroll;
+  background-color: $dark;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -10,18 +15,47 @@ h1 {
   h3 {
     font-style: italic;
   }
+  h2 {
+    text-shadow: 2px 2px $dark;
+    transition: 0.3s;
+    text-align: center;
+  }
 }
 
 .card {
   display: grid;
-  padding: 4px;
-  background: $dark;
   grid-template-rows:
     max-content
     200px 1fr;
+  padding: 10px;
+  background: $red;
+  font-family: $font;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border: 3px solid $light;
   }
+}
+
+.content {
+  padding: 2px;
+}
+
+.mainTitle {
+  font-family: $font;
+  text-align: center;
+  p {
+    color: $dark;
+    font-size: 1.2rem;
+  }
+}
+
+.filmcriticsTitle {
+  text-shadow: 2px 2px $dark;
+  transition: 0.3s;
+  padding: 10px;
 }
