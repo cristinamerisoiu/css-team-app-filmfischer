@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* h1 {
   @extend %h1-styling
  } */
@@ -19,16 +20,6 @@ html {
   color: #d8c99b;
 }
 
-body {
-  display: grid;
-  grid-template-rows: 50px 1fr 50px;
-  grid-template-columns: 1fr;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  text-align: center;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -37,12 +28,27 @@ header {
   padding: 4px;
   background-color: #d8973c;
   color: #273e47;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, “Times New Roman”, Times, serif;
   font-size: 30px;
-  padding: 10px;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
   font-style: italic;
   text-shadow: 2px 2px #d8c99b;
   transition: 0.3s;
+}
+
+.headerimg {
+  margin-left: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
 }
 
 .headerimg {
@@ -61,15 +67,95 @@ footer > a {
   justify-content: center;
   text-decoration: none;
   border: 0.5px #273e47 solid;
+  text-shadow: 2px 2px #d8c99b;
 }
 footer > a:hover {
   background: #bd632f;
 }
 
-.outset {
-  border-style: outset;
+
+
+h1 {
+  text-align: center;
 }
 
+.cinemabody {
+  overflow: auto;
+}
+
+.cinemawhole {
+  background-color: #273e47;
+}
+
+.cinemazip {
+  color: #d8c99b;
+  margin: 15px;
+  margin-left: 120px;
+  width: 137px;
+  border: 3px solid #d8c99b;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+
+.mapouter {
+  position: relative;
+  text-align: left;
+  height: 250px;
+  width: 87vw;
+  max-width: 768px;
+  margin: 15px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: #a4243b;
+  border: 2px solid #d8c99b;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 220px;
+  width: 87vw;
+  margin-left: 10px;
+}
+
+/*.cinemamain {
+  width: 100%;
+}*/
+.cinemasection {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #d8c99b;
+  box-shadow: 0 4px 8px 0 #251a1a;
+  margin: 15px;
+  margin-left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #a4243b;
+  width: 87vw;
+  max-width: 768px;
+}
+
+h4 {
+  margin: 5px;
+}
+
+h5 {
+  margin: 3px;
+}
+
+.cinemaimg {
+  width: 90px;
+  margin: 10px;
+}
+
+.cinemainfo {
+  color: #d8c99b;
+  text-align: left;
+}
+
+.cinemaicons i {
+  margin: 7px;
+=======
 .mainBackground {
   overflow: scroll;
   background-color: #273e47;
@@ -123,6 +209,7 @@ footer > a:hover {
   text-shadow: 2px 2px #273e47;
   transition: 0.3s;
   padding: 10px;
+
 }
 
 /*# sourceMappingURL=style.css.map */
