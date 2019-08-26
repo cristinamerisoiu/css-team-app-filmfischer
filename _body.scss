@@ -8,15 +8,55 @@ html {
   font-size: 16px;
   color: $light;
 }
+header {
+  display: flex;
+  justify-content: center;
+  border: $dark solid 1px;
+  align-items: center;
+  padding: 4px;
+  background-color: $mustard;
+  color: $dark;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 2px 2px $light;
+  transition: 0.3s;
+}
+.headerimg {
+  margin-left: 10px;
+}
 
 body {
   display: grid;
+  background-color: $dark;
   grid-template-rows: 50px 1fr 50px;
   grid-template-columns: 1fr;
   height: 100vh;
   width: 100vw;
   margin: 0;
   text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border: $dark solid 1px;
+  align-items: center;
+  padding: 4px;
+  background-color: $mustard;
+  color: $dark;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding: 10px;
+  font-style: italic;
+  text-shadow: 2px 2px $light;
+  transition: 0.3s;
+}
+
+.headerimg {
+  margin-left: 10px;
 }
 
 footer {
@@ -31,6 +71,7 @@ footer {
     justify-content: center;
     text-decoration: none;
     border: 0.5px $dark solid;
+    text-shadow: 2px 2px $light;
 
     &:hover {
       background: $brown;
@@ -38,10 +79,7 @@ footer {
   }
 }
 
-.outset {
-  border-style: outset;
-}
-
 .active {
   background-color: $brown;
 }
+

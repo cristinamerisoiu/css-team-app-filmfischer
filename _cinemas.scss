@@ -1,0 +1,73 @@
+h1 {
+  @extend %h1-styling;
+  text-align: center;
+}
+.cinemabody {
+  overflow: auto;
+}
+.cinemawhole {
+  background-color: $dark;
+}
+.cinemazip {
+  color: $light;
+  margin: 15px;
+  margin-left: 120px;
+  width: 137px;
+  border: 3px solid $light;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+.mapouter {
+  position: relative;
+  text-align: left;
+  height: 250px;
+  width: 87vw;
+  max-width: 768px;
+  margin: 15px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: $red;
+  border: 2px solid $light;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 220px;
+  width: 87vw;
+  margin-left: 10px;
+}
+/*.cinemamain {
+  width: 100%;
+}*/
+.cinemasection {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid $light;
+  box-shadow: 0 4px 8px 0 #251a1a;
+  margin: 15px;
+  margin-left: 20px;
+  font-family: $font;
+  background-color: $red;
+  width: 87vw;
+  max-width: 768px;
+}
+h4 {
+  margin: 5px;
+}
+h5 {
+  margin: 3px;
+}
+.cinemaimg {
+  width: 90px;
+  margin: 10px;
+}
+.cinemainfo {
+  color: $light;
+  text-align: left;
+}
+.cinemaicons {
+  i {
+    margin: 7px;
+  }
+}
