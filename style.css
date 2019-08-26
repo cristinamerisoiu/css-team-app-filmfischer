@@ -41,14 +41,55 @@ header {
   margin-left: 10px;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  border: #273e47 solid 1px;
+  align-items: center;
+  padding: 4px;
+}
+
+.filmfischer {
+  background-color: #d8973c;
+  color: #273e47;
+  font-family: Georgia, “Times New Roman”, Times, serif;
+  font-size: 30px;
+}
+.filmfischer .headerimg {
+  margin-left: 10px;
+}
+.filmfischer p {
+  padding: 10px;
+  font-style: italic;
+  text-shadow: 2px 2px #d8c99b;
+  transition: 0.3s;
+}
+
 body {
   display: grid;
+  background-color: #273e47;
   grid-template-rows: 50px 1fr 50px;
   grid-template-columns: 1fr;
   height: 100vh;
   width: 100vw;
   margin: 0;
   text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border: #273e47 solid 1px;
+  align-items: center;
+  padding: 4px;
+  background-color: #d8973c;
+  color: #273e47;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding: 10px;
+  font-style: italic;
+  text-shadow: 2px 2px #d8c99b;
+  transition: 0.3s;
 }
 
 .headerimg {
@@ -73,20 +114,53 @@ footer > a:hover {
   background: #bd632f;
 }
 
-
-
-h1 {
-  text-align: center;
-}
-
-.cinemabody {
-  overflow: auto;
-}
-
 .active {
   background-color: #bd632f;
 }
 
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+}
 .test {
   display: none;
   position: absolute;
@@ -96,14 +170,10 @@ h1 {
 }
 
 .bodybackground {
-
-.cinemawhole {
-
   background-color: #273e47;
   font-family: Helvetica, Arial, sans-serif;
   overflow: scroll;
 }
-
 
 .cardprogram {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -116,80 +186,29 @@ h1 {
 }
 .cardprogram:hover img {
   opacity: 0.3;
-
-.cinemazip {
-  color: #d8c99b;
-  margin: 15px;
-  margin-left: 120px;
-  width: 137px;
-  border: 3px solid #d8c99b;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 #251a1a;
 }
 
-.mapouter {
-  position: relative;
-  text-align: left;
-  height: 250px;
-  width: 87vw;
-  max-width: 768px;
-  margin: 15px;
-  margin-left: 20px;
-  padding: 15px;
+.cardcontainer {
+  padding: 2px 16px;
   background-color: #a4243b;
-  border: 2px solid #d8c99b;
-  box-shadow: 0 4px 8px 0 #251a1a;
 }
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 220px;
-  width: 87vw;
-  margin-left: 10px;
-}
-
 
 .programflex {
   display: flex;
   flex: 1;
-
-/*.cinemamain {
-  width: 100%;
-}*/
-.cinemasection {
-  display: flex;
   flex-direction: row;
-  border: 2px solid #d8c99b;
-  box-shadow: 0 4px 8px 0 #251a1a;
-  margin: 15px;
-  margin-left: 20px;
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: #a4243b;
-  width: 87vw;
-  max-width: 768px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-h4 {
-  margin: 5px;
+.flexitemimg {
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-h5 {
-  margin: 3px;
+.headpage {
+  text-align: center;
 }
-
-.cinemaimg {
-  width: 90px;
-  margin: 10px;
-}
-
-.cinemainfo {
-  color: #d8c99b;
-  text-align: left;
-}
-
-.cinemaicons i {
-  margin: 7px;
 
 .mainBackground {
   overflow: scroll;
@@ -244,11 +263,88 @@ h5 {
   text-shadow: 2px 2px #273e47;
   transition: 0.3s;
   padding: 10px;
-
 }
 
-.headpage {
+h1 {
   text-align: center;
+}
+
+.cinemabody {
+  overflow: auto;
+}
+
+.cinemawhole {
+  background-color: #273e47;
+}
+
+.cinemazip {
+  color: #d8c99b;
+  margin: 15px;
+  margin-left: 120px;
+  width: 137px;
+  border: 3px solid #d8c99b;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+
+.mapouter {
+  position: relative;
+  text-align: left;
+  height: 250px;
+  width: 87vw;
+  max-width: 768px;
+  margin: 15px;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: #a4243b;
+  border: 2px solid #d8c99b;
+  box-shadow: 0 4px 8px 0 #251a1a;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 220px;
+  width: 87vw;
+  margin-left: 10px;
+}
+
+/*.cinemamain {
+  width: 100%;
+}*/
+.cinemasection {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #d8c99b;
+  box-shadow: 0 4px 8px 0 #251a1a;
+  margin: 15px;
+  margin-left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #a4243b;
+  width: 87vw;
+  max-width: 768px;
+}
+
+h4 {
+  margin: 5px;
+}
+
+h5 {
+  margin: 3px;
+}
+
+.cinemaimg {
+  width: 90px;
+  margin: 10px;
+}
+
+.cinemainfo {
+  color: #d8c99b;
+  text-align: left;
+}
+
+.cinemaicons i {
+  margin: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
