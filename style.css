@@ -161,11 +161,11 @@ footer > a:hover {
     left: -300%;
   }
 }
-.test {
+.programinfo {
   display: none;
   position: absolute;
   left: 70px;
-  top: 80px;
+  top: 140px;
   z-index: 1;
 }
 
@@ -181,7 +181,7 @@ footer > a:hover {
   margin: 8px;
   width: 45%;
 }
-.cardprogram:hover .test {
+.cardprogram:hover .programinfo {
   display: inline;
 }
 .cardprogram:hover img {

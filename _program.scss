@@ -1,8 +1,8 @@
-.test {
+.programinfo {
   display: none;
   position: absolute;
   left: 70px;
-  top: 80px;
+  top: 140px;
   z-index: 1;
 }
 
@@ -19,7 +19,7 @@
   width: 45%;
 
   &:hover {
-    .test {
+    .programinfo {
       display: inline;
     }
 
