@@ -11,6 +11,6 @@ export function setLocation(value) {
   setItem("userData", storageData);
 }
 
-export function getLocation {
+export function getLocation() {
   return storageData.location;
 }
