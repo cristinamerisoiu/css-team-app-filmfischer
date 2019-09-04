@@ -1,3 +1,5 @@
+"use strict";
+
 // Define constants/variables
 const buttonCologne = document.querySelector(".cologne-btn");
 const buttonBonn = document.querySelector(".bonn-btn");
