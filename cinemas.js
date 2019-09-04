@@ -11,38 +11,26 @@ const ddorfCinemas = document.querySelectorAll(".ddorf");
 const allCinemas = document.querySelectorAll(".cinemasection");
 
 // Functions to add or remove the class .hide
-function toggleAdd(city) {
+function hideCity(city) {
   city.classList.add("hide");
 }
-function toggleHide(city) {
+function showCity(city) {
   city.classList.remove("hide");
 }
 
-// Individual functions for each Button
-function toggleCologne() {
-  allCinemas.forEach(toggleAdd);
-  cologneCinemas.forEach(toggleHide);
-}
-
-function toggleBonn() {
-  allCinemas.forEach(toggleAdd);
-  bonnCinemas.forEach(toggleHide);
-}
-
-function toggleDdorf() {
-  allCinemas.forEach(toggleAdd);
-  ddorfCinemas.forEach(toggleHide);
-}
-
-function toggleAll() {
-  allCinemas.forEach(toggleHide);
+function generateFilterCity(city) {
+  const filterCity = function() {
+    allCinemas.forEach(hideCity);
+    city.forEach(showCity);
+  };
+  return cinemaCity;
 }
 
 // Buttons
-buttonShowAll.addEventListener("click", toggleAll);
-buttonCologne.addEventListener("click", toggleCologne);
-buttonBonn.addEventListener("click", toggleBonn);
-buttonDdorf.addEventListener("click", toggleDdorf);
+buttonShowAll.addEventListener("click", generateFilterCity(allCinemas));
+buttonCologne.addEventListener("click", generateFilterCity(cologneCinemas));
+buttonBonn.addEventListener("click", generateFilterCity(bonnCinemas));
+buttonDdorf.addEventListener("click", generateFilterCity(ddorfCinemas));
 
 // Initial loading function
-allCinemas.forEach(toggleHide);
+allCinemas.forEach(showCity);
