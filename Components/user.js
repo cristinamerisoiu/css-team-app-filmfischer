@@ -1,4 +1,4 @@
-import { setItem, getItem } from "./components/storage.js";
+import { setItem, getItem } from "./storage.js";
 
 const storageData = getItem("userData") || {
   location: "allCinemas",

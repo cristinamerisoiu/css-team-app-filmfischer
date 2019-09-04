@@ -35,4 +35,6 @@ export function cinemaListener() {
 }
 
 // Initial loading function
-allCinemas.forEach(showCity);
+export function initLoading() {
+  allCinemas.forEach(showCity);
+}
