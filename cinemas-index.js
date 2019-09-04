@@ -3,11 +3,11 @@ import {
   hideCity,
   showCity,
   generateFilterCity,
-  cinemaListener
+  initLocation
 } from "./components/cinemas.js";
 // import { setItem, getItem } from "./components/storage.js";
 import { setLocation, getLocation } from "./components/user.js";
 
 initLoading();
-cinemaListener();
+initLocation();
 getLocation();

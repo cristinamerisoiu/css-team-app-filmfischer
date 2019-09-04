@@ -1,4 +1,4 @@
-"use strict";
+import { getLocation, setLocation } from "./user.js";
 
 // Define constants/variables
 const buttonCologne = document.querySelector(".cologne-btn");
@@ -27,14 +27,35 @@ export function generateFilterCity(city) {
 }
 
 // Buttons
-export function cinemaListener() {
-  buttonShowAll.addEventListener("click", generateFilterCity(allCinemas));
-  buttonCologne.addEventListener("click", generateFilterCity(cologneCinemas));
-  buttonBonn.addEventListener("click", generateFilterCity(bonnCinemas));
-  buttonDdorf.addEventListener("click", generateFilterCity(ddorfCinemas));
-}
+// export function cinemaListener() {
+//   buttonShowAll.addEventListener("click", generateFilterCity(allCinemas));
+//   buttonCologne.addEventListener("click", generateFilterCity(cologneCinemas));
+//   buttonBonn.addEventListener("click", generateFilterCity(bonnCinemas));
+//   buttonDdorf.addEventListener("click", generateFilterCity(ddorfCinemas));
+// }
 
 // Initial loading function
 export function initLoading() {
   allCinemas.forEach(showCity);
+}
+
+export function initLocation() {
+  buttonShowAll.value = getLocation;
+
+  buttonShowAll.addEventListener("click", function() {
+    setLocation(allCinemas);
+    generateFilterCity(allCinemas);
+  });
+  buttonCologne.addEventListener("click", function() {
+    setLocation(cologneCinemas);
+    generateFilterCity(cologneCinemas);
+  });
+  buttonBonn.addEventListener("click", function() {
+    setLocation(bonnCinemas);
+    generateFilterCity(bonnCinemas);
+  });
+  buttonDdorf.addEventListener("click", function() {
+    setLocation(ddorfCinemas);
+    generateFilterCity(ddorfCinemas);
+  });
 }

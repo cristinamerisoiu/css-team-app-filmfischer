@@ -14,3 +14,7 @@ export function setLocation(value) {
 export function getLocation() {
   return storageData.location;
 }
+
+function log() {
+  console.log(storageData);
+}
