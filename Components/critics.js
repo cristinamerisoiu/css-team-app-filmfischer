@@ -1,4 +1,3 @@
-"use strict";
 export function criticsAccordion() {
   let acc = document.getElementsByClassName("accordion");
   let i;
