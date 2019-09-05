@@ -26,36 +26,40 @@ export function generateFilterCity(city) {
   return filterCity;
 }
 
-// Buttons
-// export function cinemaListener() {
-//   buttonShowAll.addEventListener("click", generateFilterCity(allCinemas));
-//   buttonCologne.addEventListener("click", generateFilterCity(cologneCinemas));
-//   buttonBonn.addEventListener("click", generateFilterCity(bonnCinemas));
-//   buttonDdorf.addEventListener("click", generateFilterCity(ddorfCinemas));
-// }
+const filterAllCinemas = generateFilterCity(allCinemas);
+const filterCologneCinemas = generateFilterCity(cologneCinemas);
+const filterBonnCinemas = generateFilterCity(bonnCinemas);
+const filterDdorfCinemas = generateFilterCity(ddorfCinemas);
 
 // Initial loading function
 export function initLoading() {
-  allCinemas.forEach(showCity);
+  const location = getLocation();
+  if (location === "cologneCinemas") {
+    filterCologneCinemas();
+  } else if (location === "bonnCinemas") {
+    filterBonnCinemas();
+  } else if (location === "ddorfCinemas") {
+    filterDdorfCinemas();
+  } else {
+    filterAllCinemas();
+  }
 }
 
 export function initLocation() {
-  buttonShowAll.value = getLocation;
-
   buttonShowAll.addEventListener("click", function() {
-    setLocation(allCinemas);
-    generateFilterCity(allCinemas);
+    filterAllCinemas();
+    setLocation("allCinemas");
   });
   buttonCologne.addEventListener("click", function() {
-    setLocation(cologneCinemas);
-    generateFilterCity(cologneCinemas);
+    filterCologneCinemas();
+    setLocation("cologneCinemas");
   });
   buttonBonn.addEventListener("click", function() {
-    setLocation(bonnCinemas);
-    generateFilterCity(bonnCinemas);
+    filterBonnCinemas();
+    setLocation("bonnCinemas");
   });
   buttonDdorf.addEventListener("click", function() {
-    setLocation(ddorfCinemas);
-    generateFilterCity(ddorfCinemas);
+    filterDdorfCinemas();
+    setLocation("ddorfCinemas");
   });
 }

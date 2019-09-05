@@ -5,8 +5,8 @@ const storageData = getItem("userData") || {
   age: "21"
 };
 
-export function setLocation(value) {
-  storageData.location = value;
+export function setLocation(sectionvalue) {
+  storageData.location = sectionvalue;
   log();
   setItem("userData", storageData);
 }
